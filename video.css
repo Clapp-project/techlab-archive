@@ -1,0 +1,39 @@
+html,div,body,article{
+	margin: 0;
+}
+/* ----- 閭梧勹逕ｨ縺ｮ蜍慕判繝輔ぃ繧､繝ｫ ----- */
+#bg-video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url(poster.jpg) no-repeat;
+	background-size: cover;
+}
+/* ----- 閭梧勹縺ｮ荳翫↓陦ｨ遉ｺ縺輔○縺溘＞繧ｳ繝ｳ繝�Φ繝� ----- */
+.header-title{
+	position: relative; /*蠢�★蠢�ｦ�*/
+	top: 20%;
+	z-index: 2; /*蠢�★蠢�ｦ�*/
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	margin: auto;
+}
+.header-title p{
+	font-size: 2em;
+	background: #fff;
+	padding: 80px;
+}
+/* ----- 繧ｰ繝ｩ繝��繧ｷ繝ｧ繝ｳ繧ｪ繝ｼ繝舌�繝ｬ繧､ ----- */
+.wrap{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(-45deg, rgba(4, 114, 124, 0.6), rgba(17, 66, 99, 0.5));
+}

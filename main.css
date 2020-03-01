@@ -1,0 +1,104 @@
+/* This Css document was built by T.yamamoto and some webpages...*/
+/* プログラミングはコピペでできている（大嘘？）*/
+
+/*body{
+    /*文字色の変更　紺色*/
+    color: darkblue;
+    /*背景色の変更　薄い青*/
+    background-color: azure;
+    
+}*/
+
+div#clock_frame
+{
+    /* 横幅を親要素であるbodyの100%(同じ幅)にする */
+    width: 100%;
+    text-align: center;
+}
+
+span{
+    /* 本来はインライン要素であるspanをブロック要素として扱うけど横一列にしたいけえ無視 */
+    /*display: block;*/
+    /* ここでは親要素であるdivの内部で右に寄せて配置させる */
+    /*float: center;*/
+    /* 横幅を親要素であるdivの50%にする */
+    width: 50%;
+}
+
+/* id="clock_date" のspan要素 */
+span#clock_date
+{
+    /* この要素の中におけるテキストを右詰めにする デフォルト値のtext-align:leftを上書き */
+    text-align: center;
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の0.5倍にするかい！ */
+    font-size: 15px;
+    /* 右のパディングの幅を親要素であるdivで設定されたフォントサイズ(px)の0.5倍にする */
+    /*padding-right: 0.5em;*/
+}
+
+/* id="clock_time" のspan要素 */
+span#clock_time
+{
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
+    font-size: 2em;
+}
+
+.item {
+width:80%; min-width:25%;
+height:300px;
+background-color: antiquewhite;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:8px;
+margin: 30px;
+
+}
+
+.item{
+    font-size: 30px;
+}
+
+i{
+    font-size: 100px;
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #4c6cb3;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+/*
+@media screen and (max-width:1600px){
+	.container div {width:28%; min-width:28%;}
+}
+
+@media screen and (max-width:800px){
+	.container div {width:46%; min-width:46%;}
+}
+
+@media screen and (max-width:600px){
+	.container div {width:100%; min-width:100%;}
+}
+*/
+body {width:100%; padding:0 20px;}
+
+.container .item {width: 30%;}
